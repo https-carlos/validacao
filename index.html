@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação</title>
+    <style>
+        input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    </style>
+</head>
+<body>
+    <h1>ESCOLA VIRTUAL - Formulário de Pré-Matrícula</h1>
+    <form action="#" onsubmit="return validarFormulario();">
+        <label for="nomeAluno">Nome do Aluno:</label>
+        <input type="text" id="nomeAluno" name="nomeAluno" ><br><br>
+    
+        <label>Data de Nascimento (dd/mm/aaaa):</label>
+        <input type="number" id="dia" name="dia" placeholder="dd" style="width: 50px"> /
+        <input type="number" id="mes" name="mes" placeholder="mm" style="width: 50px"> /
+        <input type="number" id="ano" name="ano" placeholder="aaaa" style="width: 50px"><br><br>
+
+        <label for="nomeMae">Nome da Mãe:</label>
+        <input type="text" id="nomeMae" name="nomeMae"><br><br>
+
+        <label for="nomePai">Nome do Pai:</label>
+        <input type="text" id="nomePai" name="nomePai"><br><br>
+
+        <label for="telefone">Telefone DDD:</label>
+        (<input type="number" id="telefone" name="telefone"  style="width: 20px">)
+        <label for="telRamal">Tel:</label>
+        <input type="text" id="telRamal" name="telRamal"><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" ><br><br>
+
+        <label for="serie">Série:</label>
+        <select id="serie" name="serie">
+            <option value="1">1ª série</option>
+            <option value="2">2ª série</option>
+            <option value="3">3ª série</option>
+            <option value="4">4ª série</option>
+            <option value="5">5ª série</option>
+            <option value="6">6ª série</option>
+            <option value="7">7ª série</option>
+        </select><br><br>
+
+        <label>Turno:</label><br>
+        <input type="radio" id="matutino" name="turno" value="Matutino" checked>
+        <label for="matutino">Matutino</label><br>
+        <input type="radio" id="vespertino" name="turno" value="Vespertino">
+        <label for="vespertino">Vespertino</label><br><br>
+
+        <label>Atividades Extracurriculares:</label><br>
+        <input type="checkbox" id="informatica" name="atividades" value="Informática">
+        <label for="informatica">Informática</label><br>
+        <input type="checkbox" id="musica" name="atividades" value="Música">
+        <label for="musica">Música</label><br>
+        <input type="checkbox" id="ballet" name="atividades" value="Ballet">
+        <label for="ballet">Ballet</label><br>
+        <input type="checkbox" id="pintura" name="atividades" value="Pintura">
+        <label for="pintura">Pintura</label><br>
+        <input type="checkbox" id="judo" name="atividades" value="Judô">
+        <label for="judo">Judô</label><br>
+        <input type="checkbox" id="futebol" name="atividades" value="Futebol">
+        <label for="futebol">Futebol</label><br><br>
+        <input type="submit" value="Enviar">
+        <script src="./script.js"></script>
+    </form>
+</body>
+</html>
